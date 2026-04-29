@@ -29,6 +29,13 @@ analysis = [
 spatial = [
     "squidpy>=1.5",
 ]
+# Phase 2: Geneformer + CELLxGENE — install torch separately via conda or setup_ec2.sh
+geneformer = [
+    "transformers>=4.40",
+    "huggingface_hub>=0.23",
+    "accelerate>=0.30",
+    "cellxgene-census",
+]
 
 [project.scripts]
 spectra = "spectra.cli:main"
