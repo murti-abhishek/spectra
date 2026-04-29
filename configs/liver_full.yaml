@@ -1,0 +1,25 @@
+models:
+  - geneformer
+  - scgpt
+  - uce
+  - nicheformer
+  - livertransformer
+  - pca_baseline
+
+tasks:
+  - cell_type_annotation
+  - batch_integration
+  - liver_cell_type_annotation
+  - zonation_prediction
+  - fetal_adult_discrimination
+  - spatial_transfer
+
+settings:
+  zero_shot: true
+  fine_tuned: true
+  n_splits: 5
+  seed: 42
+
+output:
+  dir: ./results/liver_full
+  format: [json, csv]

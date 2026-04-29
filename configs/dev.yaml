@@ -1,0 +1,17 @@
+models:
+  - mock
+  - pca_baseline
+
+tasks:
+  - liver_cell_type_annotation
+  - zonation_prediction
+
+settings:
+  zero_shot: true
+  fine_tuned: false
+  n_splits: 3
+  seed: 42
+
+output:
+  dir: ./results/dev
+  format: [json]

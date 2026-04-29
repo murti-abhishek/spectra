@@ -1,0 +1,53 @@
+# Claude Code context
+spectra_context.md
+CLAUDE.md
+
+# Model weights and large data
+*.h5
+*.h5ad
+*.loom
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+data/
+weights/
+.cache/
+
+# Large dataset formats
+*.zarr/
+*.zarr
+
+# Results — synthetic/dev runs are not committed; only real benchmark results are
+results/raw/
+results/dev/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Test and coverage artefacts
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Environments
+.env
+*.env
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+.DS_Store?
+Thumbs.db
